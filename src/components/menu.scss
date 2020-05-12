@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+nav{width: 100%;
+    height: 8vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    display: flex;
+    background-color:#FAF8F8 ;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 3px;
+    a{text-decoration: none;
+      color: black;}
+    .burger{font-size: 1.7rem;}
+    h1{font-size: 2.5rem;
+    font-family: 'Special Elite', cursive;
+        }
+    .desktop{display: none;}
+}
+.mobil{display: none;
+       }
+.open{display: flex;
+  position: absolute;
+    background-color:rgba(250, 248, 248, 0.836) ;
+    width: 100%;
+    
+    top: 14vh;
+    right: 0px;
+    z-index: 9;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    li{
+        padding: 10px;
+        margin: 5px;
+        width: 100%;
+    }
+    a{text-decoration: none;
+        color: black;
+        font-size: 1.3rem;}
+    }
+
+@media screen and (min-width:700px){
+    nav{
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:#FAF8F8 ;
+        .burger{display: none;}
+        .mobil{display: none;}
+        .desktop{  
+                    width: 800px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    list-style: none;
+                    height: 8vh;
+                    letter-spacing: 3px;
+                    
+                        a{color: black;
+                        text-decoration: none;
+                        font-size: 1rem;}
+                        :hover{text-decoration: overline;}
+                }
+        }
+    
+}

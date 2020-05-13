@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "Blog post in GatsbyJS",
+  "description": "Board Skate Snow Surf eshop",
   "version": "0.1.0",
   "author": "Juraj Basanda <basanda.juraj@gmail.com>",
   "dependencies": {
@@ -31,7 +31,7 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "blog,post ,juraj basanda"
+    "board , eshop , juraj , basanda "
   ],
   "license": "MIT",
   "scripts": {

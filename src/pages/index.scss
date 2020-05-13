@@ -3,12 +3,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+
     h1{
         font-style: italic;
         font-size: 4rem;
@@ -144,6 +150,7 @@ h2{color: white;
 
 @media screen and (min-width:700px){//-------------------------------------------------700px-------------------------------
 .home{
+    background-attachment: fixed;
     justify-content: flex-start;
     align-items: center;
     h1{

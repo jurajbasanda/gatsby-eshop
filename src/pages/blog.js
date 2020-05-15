@@ -6,10 +6,13 @@ import Link from 'gatsby-link'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import './boards.scss'
+
 const BlogPage = ({data}) =>  
   (
     <Layout>
     <SEO title='Blog'/>
+    <section className='boards'>
       <h1>Latest Post</h1>
         {data.allMarkdownRemark.edges.map(post => (
             <div key={post.node.id}>
@@ -24,6 +27,7 @@ const BlogPage = ({data}) =>
             </div>
 
             ))}
+    </section>        
     </Layout>
   )
 

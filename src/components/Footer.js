@@ -13,7 +13,8 @@ export default function Footer() {
     </ul>
     <br/>
     <article className='sub'>
-    <input type="emial" name='email' placeholder='Join our Newsletter'/>
+    <label htmlFor='email'>Fallow us</label>
+    <input type="emial" id='email' name='email'  placeholder='Join our Newsletter'/>
     <button>Join</button>
     </article>
     <br/>

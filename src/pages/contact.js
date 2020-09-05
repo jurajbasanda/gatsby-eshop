@@ -12,6 +12,15 @@ export default function contact() {
     <SEO title='Contact' />
     <section className='contact'>
     <iframe src={googleMap} title='googleMap' />
+    
+    <p className='contact-text'>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum,
+     illum tempora a saepe sunt dolorum beatae enim quam deleniti mollitia ea molestiae impedit temporibus
+      fuga dolor rerum officiis accusantium.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum,
+     illum tempora a saepe sunt dolorum beatae enim quam deleniti mollitia ea molestiae impedit temporibus
+      fuga dolor rerum officiis accusantium.
+      </p>
     <h2>Contact Us</h2>
     <form action="" method="post">
       <label htmlFor="email">Email</label>

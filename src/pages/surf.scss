@@ -1,0 +1,51 @@
+
+.surf{  
+        width:100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+
+         a{text-decoration: none;
+            font-style: italic;
+            color: black;
+            font-size: 1.2rem;}
+        .backLink{
+                padding-left: 20vh;
+                    padding-right: 20vh;
+                justify-self: flex-start;
+                align-self: flex-start;
+        }
+    }
+.head-background{   width: 100%;
+                     height: 25vh;
+                    background-image: url(../images/surfing.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    padding-left: 20vh;
+                    padding-right: 20vh;
+                    justify-content: flex-start;
+                    align-items: center;
+            h2{font-size: 4rem;
+            color: white;
+            font-style: italic;
+            
+            }
+
+}
+.gallery{
+        .gallery-item{display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 3vh;
+                        img{
+                        width: 90%;
+                        }img:hover{width:100%;transition: all 1s;}
+        }
+}

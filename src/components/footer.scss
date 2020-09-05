@@ -9,6 +9,7 @@ footer{
         flex-direction: column;
         justify-items: center;
         align-content: center;
+    label{margin:5px;}
     input{padding: 5px;
             background-color: rgb(206, 202, 202);
             border: none;
@@ -16,6 +17,8 @@ footer{
             text-align: center;
             font-size: 1.2rem;
         }
+
+        
     button{
         background-color: rgb(189, 42, 42);
         color: white;
@@ -24,7 +27,8 @@ footer{
             width: 100%;
             font-size: 1.2rem;
             cursor: pointer;
-        }:hover{background-color: rgb(141, 31, 31);}
+            &:hover{background-color:  rgb(165, 56, 56)}
+        }
     }
     ul{list-style: none;} 
 }
@@ -35,7 +39,8 @@ footer{
     align-items: center;
     margin: 3vh;
     li{margin: 1vh;}
-        i{font-size: 1.6rem;}
+    i{font-size: 1.6rem;
+    &:hover{color:  rgb(165, 56, 56)}}
 }
 .madeBy{
     align-self: flex-end;

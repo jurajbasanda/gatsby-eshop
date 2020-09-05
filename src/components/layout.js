@@ -12,9 +12,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <FirstBar/>
-    <Menu/>
-        <main>{children}</main>
+        <FirstBar/>
+          <Menu/>
+            <main>{children}</main>
         <Footer/>
     </>
   )

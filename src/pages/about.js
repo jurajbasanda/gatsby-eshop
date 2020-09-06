@@ -12,7 +12,7 @@ export default function about() {
     <SEO title='About' />
     <section className='about'>
       <h1>About</h1>
-      <p>This is About page.</p>
+      <p>The About page.</p>
     </section>
     </Layout>
   );

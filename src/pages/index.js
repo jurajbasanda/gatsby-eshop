@@ -23,9 +23,9 @@ const IndexPage = () => (
     <h2>EXPLORE OUR BOARDS</h2>
     <article className='options-group'>
     
-    <Link to='/blog'><div className='options-item skate'><div className='transp'><h3>SKATE</h3></div></div></Link>
-     <Link to='/blog'><div className='options-item snow'><div className='transp'><h3>SNOW</h3></div></div></Link>
-     <Link to='/blog'><div className='options-item surf'><div className='transp'><h3>SURF</h3></div></div></Link>
+    <Link to='/skate'><div className='options-item skate'><div className='transp'><h3>SKATE</h3></div></div></Link>
+     <Link to='/snow'><div className='options-item snow'><div className='transp'><h3>SNOW</h3></div></div></Link>
+     <Link to='/surf'><div className='options-item surf'><div className='transp'><h3>SURF</h3></div></div></Link>
     </article>
     </section>
     <section className='videoSection'>

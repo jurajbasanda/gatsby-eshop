@@ -16,10 +16,10 @@ flex-direction: row;
 
 }
 .backLink{
-    a{text-decoration: none;
-        font-style: italic;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-decoration: none;
         color: black;
-        font-size: 1.2rem;}
     justify-self: flex-start;
     align-self: flex-start;
 }
@@ -37,7 +37,7 @@ text-align: left;
     img{width: 300px;}
 }
 .item-dsc{
-   width: 100%;
+   margin: 1rem;
 }
 @media screen and (max-width:700px){
 .item-info{margin-left: 5vh;

@@ -1,12 +1,11 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Link from 'gatsby-link'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import './boards.scss'
-import { repeat } from 'lodash';
 
 //Background Image
 import background from '../../public/img/snowboarding01.jpg'
@@ -33,7 +32,7 @@ const SnowPage = ({data}) =>
             </Link>
             <br/>
             <br/>
-            <p>£{post.node.frontmatter.date}</p>
+            <p className='price'>£{post.node.frontmatter.date}</p>
              
             <br/>
             <br/>

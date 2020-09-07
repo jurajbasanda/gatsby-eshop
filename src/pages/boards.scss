@@ -1,4 +1,5 @@
-.boards{  width:100%;
+.boards{  
+    width:100%;
     height: 100%;
     background-color: white;
     display: flex;
@@ -19,7 +20,8 @@
     }
         
     }
-    .head-background{   width: 100%;
+    .head-background{  
+         width: 100%;
         height: 25vh;
        background-position: center;
        background-repeat: no-repeat;
@@ -30,7 +32,7 @@
        justify-content: flex-start;
        align-items: center;
             h2{
-            font-size: 1rem;
+            font-size: 3rem;
             color: white;
             font-style: italic;
             cursor: default;
@@ -54,6 +56,11 @@
         flex-direction: column;
     img{width:300px;}
 }
+.price{
+    color: rgb(190, 7, 7);
+    font-size: 1.5rem;
+    margin:2rem;
+}
 //---------------------------------------max-width--700px-----mobile-----------------------
 @media screen and (max-width:700px){
     .boards{  
@@ -68,7 +75,7 @@
             justify-content: flex-start;
             align-items: center;
                     h2{
-                    font-size: 3rem;
+                    font-size: 4rem;
                     }
                 }
     } 

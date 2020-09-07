@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import './boards.scss'
 
 //Background Image
-import background from '../../public/img/skateboard01.jpg'
+import background from '../../img/skateboard01.jpg'
 
 
 const SurfPage = ({data}) =>  

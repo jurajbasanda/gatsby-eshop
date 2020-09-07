@@ -4,22 +4,22 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
 
-  const postTemplate = path.resolve('src/templates/blog-post.js')
 
   return graphql(`
-    {
-      allMarkdownRemark {
-    edges {
-      node {
-        html
-        id
-        frontmatter {
-          author
-          date
-          path
-          title
+  {
+  allWpSkate {
+    nodes {
+      Skate {
+        fieldGroupName
+        price
+        title
+        image {
+          sourceUrl
         }
       }
+      id
+      content
+      slug
     }
   }
 }
@@ -27,11 +27,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     if (res.errors) {
       return Promise.reject(res.errors)
     }
-
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const postTemplate = path.resolve('src/templates/product.js')
+    res.data.allWpSkate.nodes.forEach(({ slug }) => {
       createPage({
-        path: node.frontmatter.path,
+        path: `/${slug}`,
         component: postTemplate,
+        context:{
+          slug: slug ,
+        }
       })
     })
   })

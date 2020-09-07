@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import './boards.scss'
 
 //Background Image
-import background from '../../public/img/snowboarding01.jpg'
+import background from '../../img/snowboarding01.jpg'
 
 const SnowPage = ({data}) =>  
   (

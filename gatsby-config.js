@@ -5,6 +5,16 @@ module.exports = {
     author: `@jurajbasanda`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress-experimental`,
+      options: {
+        /*
+         * The full URL of the WordPress site's GraphQL API.
+         * Example : 'https://www.example-site.com/graphql'
+         */
+        url: `https://admin.jurajbasanda.com/graphql`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,

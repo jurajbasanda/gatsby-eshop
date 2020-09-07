@@ -3,7 +3,7 @@ path: "/skate1"
 date: "200"
 author: "Skate"
 title: "Skateboard Play 120"
-featuredImage: ./img/skate2.png
+featuredImage: ../src/img/skate2.png
 ---
 
 WKND 8.25 Karsten Kleppan Heart Eyes Skateboard Deck Black</br>

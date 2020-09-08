@@ -22,14 +22,14 @@ export default function contact() {
       fuga dolor rerum officiis accusantium.
       </p>
     <h2>Contact Us</h2>
-    <form action="" method="post">
+    <form action="" method="">
       <label htmlFor="email">Email</label>
         <input type="email" name="email"/>
       <label htmlFor="name">Name</label>
         <input typ='name' name='name'/>
       <label htmlFor="message">Message</label>
         <textarea name="message" cols="30" rows="10"></textarea>
-    <button type="submit">Send</button>
+    <button type="">Send</button>
     </form>
       </section>
     </Layout>

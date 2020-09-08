@@ -26,10 +26,10 @@ const SurfPage = ({data}) =>{
         <div className='boards-group'>
         {sections.map(section => (
             <div className='board-item'  key={section.id}>
-            <Link to={section.slug}>
+            <Link to={section.title}>
             <h4>{section.snow.title}</h4>
             </Link>
-            <Link to={section.slug}>
+            <Link to={section.title}>
             <img src={section.snow.image.sourceUrl} alt="img"/>
             </Link>
             

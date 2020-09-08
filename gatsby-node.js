@@ -5,8 +5,8 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
   
     return graphql(`
-    {
-        allWpSkate {
+    query{
+    allWpSkate {
             nodes {
               Skate {
                 brand
@@ -54,9 +54,9 @@ exports.createPages = async ({ graphql, actions }) => {
             title
           }
         }
-    }
+      }
         
-    }
+    
     `).then(result => {
 		if (result.errors) {
 			return Promise.reject(result.errors);
@@ -66,11 +66,13 @@ exports.createPages = async ({ graphql, actions }) => {
     const surfTemplate = path.resolve(`./src/templates/productSurf.js`)
     const snowTemplate = path.resolve(`./src/templates/productSnow.js`)
     const skateTemplate = path.resolve('./src/templates/productSkate.js')
+
+
     result.data.allWpSkate.nodes.forEach(({slug}) => {
-      
-  
+
+
       createPage({
-        path: `/product/${slug}/`,
+        path: `/${slug}/`,
           component: skateTemplate,
           context: {
               slug: slug,
@@ -80,7 +82,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     result.data.allWpSurf.nodes.forEach(({id}) => {
       createPage({
-        path: `/product/${id}/`,
+        path: `/${id}/`,
           component: surfTemplate,
           context: {
               id: id,
@@ -91,7 +93,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allWpSnow.nodes.forEach(({title}) => {
       createPage ({
         component: snowTemplate,
-        path: `/blog/${title}`,
+        path: `/${title}`,
         context: {
           title: title,
         }

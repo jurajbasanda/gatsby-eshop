@@ -32,8 +32,8 @@ export default function Template({data}){
 }
 
 export const postQuery = graphql`
-query($slug: StringQueryOperatorInput) {
-  allWpSkate(filter: {slug: $slug}) {
+query($slug: String) {
+  allWpSkate(filter: {slug: {eq:$slug}}) {
     nodes {
       Skate {
         brand

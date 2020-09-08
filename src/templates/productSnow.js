@@ -13,7 +13,7 @@ export default function Template({data}){
   <Layout>
     <SEO title={item.snow.title} />
     <section className='item-template'>
-    <Link className='backLink' to='/skate'><i className="fas fa-chevron-left" /> Go back </Link>
+    <Link className='backLink' to='/snow'><i className="fas fa-chevron-left" /> Go back </Link>
     <div className="item-group">
    <img src={item.snow.image.sourceUrl} alt=""/>
       <div className="item-info">
@@ -32,8 +32,8 @@ export default function Template({data}){
 }
 
 export const postQuery = graphql`
-query($title: StringQueryOperatorInput) {
-  allWpSnow(filter: {title: $title}) {
+query($title: String) {
+  allWpSnow(filter: {title: {eq:$title}}) {
     nodes {
       snow {
         brand

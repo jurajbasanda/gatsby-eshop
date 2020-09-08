@@ -8,63 +8,63 @@ import SEO from "../components/seo"
 import './boards.scss'
 
 //Background Image
-import background from '../../img/snowboarding01.jpg'
+import background from '../../img/skateboard01.jpg'
 
-const SnowPage = ({data}) =>  
-  (
+const SurfPage = ({data}) =>{  
+  const sections = data.allWpSnow.nodes;
+
+  return(
+    
     <Layout>
-    <SEO title='Blog'/>
+    <SEO title='Snowboard'/>
     <section className='boards'>
     <div className='head-background' style={ {backgroundImage:`url(${background})`}} >
-    <h2>Snowboard</h2>
+      <h2>Skateboard</h2>
       </div>
       <Link className='backLink' to='/'><i className="fas fa-chevron-left" /> Go back </Link>
-    <h2>Latest products</h2>
+    <h3>Latest products</h3>
         <div className='boards-group'>
-        {data.allMarkdownRemark.edges.map(post => (
-            <div className='board-item'  key={post.node.id}>
-            <Link to={post.node.frontmatter.path}>
-            <h3>{post.node.frontmatter.title}</h3>
+        {sections.map(section => (
+            <div className='board-item'  key={section.id}>
+            <Link to={section.slug}>
+            <h4>{section.snow.title}</h4>
             </Link>
-            <small>Skate by {post.node.frontmatter.author}</small>
-            <Link to={post.node.frontmatter.path}>
-            <img src={post.node.frontmatter.featuredImage} alt="img"/>
+            <Link to={section.slug}>
+            <img src={section.snow.image.sourceUrl} alt="img"/>
             </Link>
-            <br/>
-            <br/>
-            <p className='price'>£{post.node.frontmatter.date}</p>
+            
+            <p className='price'>£ {section.snow.price}</p>
              
-            <br/>
-            <br/>
+            
             </div>
 
             ))}
             </div>
     </section>        
     </Layout>
-  )
+  )}
 
 export const pageQuery = graphql`
-query SnowIndexQuery{
-  allMarkdownRemark {
-    edges {
-      node {
-        id
-        frontmatter {
-          path
-          date
-          author
-          title
-          featuredImage
-          }
-        excerpt
+query {
+  allWpSnow {
+    nodes {
+      snow {
+        price
+        content
+        brand
+        content
+        title
+        image {
+          sourceUrl
+        }
       }
+      slug
+      id
+      title
     }
   }
-
-      
 }
 `
 
 
-export default SnowPage
+export default SurfPage

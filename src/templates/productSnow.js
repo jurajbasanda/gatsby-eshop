@@ -7,23 +7,23 @@ import SEO from "../components/seo"
 import './item.scss'
 
 export default function Template({data}){
-  const section = data.allWpSkate.nodes;
+  const section = data.allWpSnow.nodes;
   const item = section[0]
     return(
   <Layout>
-    <SEO title={item.Skate.title} />
+    <SEO title={item.snow.title} />
     <section className='item-template'>
-    <Link className='backLink' to='/'><i className="fas fa-chevron-left" /> Go back </Link>
+    <Link className='backLink' to='/skate'><i className="fas fa-chevron-left" /> Go back </Link>
     <div className="item-group">
-    <div className="item-img"><img src={item.Skate.image.sourceUrl} alt=""/></div>
+   <img src={item.snow.image.sourceUrl} alt=""/>
       <div className="item-info">
         <div className="item-title">
-          <h2>{item.Skate.title}</h2>
+          <h2>{item.snow.title}</h2>
           <small>Brand by </small>
-          <p className='price'>£ {item.Skate.price}</p>
+          <p className='price'>£ {item.snow.price}</p>
         </div>
         <div className='item-dsc'>
-          <p  dangerouslySetInnerHTML={{ __html: item.content }}></p>
+          <p>{item.snow.content}</p>
         </div>
       </div>
   </div>    </section>
@@ -32,18 +32,18 @@ export default function Template({data}){
 }
 
 export const postQuery = graphql`
-query($slug: String) {
-  allWpSkate(filter: { slug: { eq: $slug } }) {
+query($title: StringQueryOperatorInput) {
+  allWpSnow(filter: {title: $title}) {
     nodes {
-      Skate {
-        fieldGroupName
-        price
+      snow {
+        brand
+        content
         title
+        price
         image {
           sourceUrl
         }
       }
-      content
       id
       slug
     }

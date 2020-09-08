@@ -45,19 +45,20 @@ const SkatePage = ({data}) =>{
   )}
 
 export const pageQuery = graphql`
-{
+query{
   allWpSkate {
     nodes {
       Skate {
         fieldGroupName
         price
         title
+        content
         image {
           sourceUrl
         }
       }
       id
-      content
+      title
       slug
     }
   }

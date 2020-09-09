@@ -9,7 +9,7 @@ import './about.scss'
 export default function about() {
   return (
     <Layout>
-    <SEO title='About' />
+    <SEO title='Board | About' />
     <section className='about'>
       <h1>About</h1>
       <p>This is About page.</p>

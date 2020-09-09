@@ -17,6 +17,7 @@
                 padding-right: 20vh;
             justify-self: flex-start;
             align-self: flex-start;
+            margin-bottom: 5vh;
     }
         
     }
@@ -38,30 +39,31 @@
             cursor: default;
             }
 }   
-.backLink{
-    padding-left: 20vh;
-        padding-right: 20vh;
-    justify-self: flex-start;
-    align-self: flex-start;
+
+.title{
+    margin-bottom: 5vh;
 }
     .boards-group{
         display: flex;
         flex-wrap: wrap;
-        text-align: center;
         justify-content: center;
         align-content: center;
+       
     }
     .board-item{
         margin:2rem;
         display: flex;
         flex-direction: column;
-        
-    img{width:18rem;}
+        text-align: center;
+              
+    img{width:18rem;
+        justify-self: center;
+        align-self: center;
+    }
 }
 .price{
     color: rgb(190, 7, 7);
     font-size: 1.5rem;
-    margin:2rem;
 }
 //------------------------------------max-width---1030px----------ipad--------------------------
 @media screen and (max-width:1030px){

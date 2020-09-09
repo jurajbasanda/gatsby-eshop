@@ -16,26 +16,25 @@ const SkatePage = ({data}) =>{
   return(
     
     <Layout>
-    <SEO title='Blog'/>
+    <SEO title={`Board | Skateboard`}/>
     <section className='boards'>
     <div className='head-background' style={ {backgroundImage:`url(${background})`}} >
       <h2>Skateboard</h2>
       </div>
       <Link className='backLink' to='/'><i className="fas fa-chevron-left" /> Go back </Link>
-    <h3>Latest products</h3>
+      <h3 className='title'>Latest products</h3>
         <div className='boards-group'>
         {sections.map(section => (
             <div className='board-item'  key={section.id}>
             <Link to={section.slug}>
-            <h4>{section.Skate.title}</h4>
-            </Link>
-            <Link to={section.slug}>
             <img src={section.Skate.image.sourceUrl} alt={section.Skate.title}/>
             </Link>
-            
-            <p className='price'>£ {section.Skate.price}</p>
-             
-            
+
+            <Link to={section.slug}>
+            <h4>{section.Skate.title}</h4>
+            <p className='price'>£{section.Skate.price}</p>
+            </Link>
+
             </div>
 
             ))}

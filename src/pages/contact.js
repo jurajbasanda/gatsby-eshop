@@ -9,7 +9,7 @@ const googleMap = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.
 export default function contact() {
   return (
     <Layout>
-    <SEO title='Contact' />
+    <SEO title='Board | Contact' />
     <section className='contact'>
     <iframe src={googleMap} title='googleMap' />
     

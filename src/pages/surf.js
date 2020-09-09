@@ -16,7 +16,7 @@ const SurfPage = ({data}) =>{
   return(
     
     <Layout>
-    <SEO title='Blog'/>
+    <SEO title='Board | Surfboard'/>
     <section className='boards'>
     <div className='head-background' style={ {backgroundImage:`url(${background})`}} >
       <h2>Skateboard</h2>
@@ -27,15 +27,13 @@ const SurfPage = ({data}) =>{
         {sections.map(section => (
             <div className='board-item'  key={section.id}>
             <Link to={section.id}>
-            <h4>{section.surf.title}</h4>
-            </Link>
-            <Link to={section.id}>
             <img src={section.surf.image.sourceUrl} alt={section.surf.title}/>
             </Link>
-            
+
+            <Link to={section.id}>
+            <h4>{section.surf.title}</h4>
             <p className='price'>£ {section.surf.price}</p>
-             
-            
+            </Link>
             </div>
 
             ))}

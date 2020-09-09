@@ -59,7 +59,7 @@
             width: 100%;
             text-align: center;}
         .item-dsc{
-            width: 90%;
+            width: 100%;
         }
     .item-group{flex-wrap: wrap;
                 margin: 0;
@@ -72,5 +72,8 @@
     img{max-width: 12rem;
         align-self: center;
         justify-self: center;
+        }
+        .item-dsc{
+            width: 100%;
         }
 }

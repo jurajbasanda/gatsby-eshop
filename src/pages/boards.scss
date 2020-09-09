@@ -48,18 +48,38 @@
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        
+        justify-content: center;
+        align-content: center;
     }
     .board-item{
         margin:2rem;
         display: flex;
         flex-direction: column;
-    img{width:20rem;}
+        
+    img{width:18rem;}
 }
 .price{
     color: rgb(190, 7, 7);
     font-size: 1.5rem;
     margin:2rem;
+}
+//------------------------------------max-width---1030px----------ipad--------------------------
+@media screen and (max-width:1030px){
+    .boards{  
+        .backLink{
+                padding-left: 5vh;
+                padding-right: 5vh;
+                
+        } 
+        .head-background{   
+            padding-left: 5vh;
+            padding-right: 0vh;
+            justify-content: flex-start;
+            align-items: center;
+                    h2{
+                    font-size: 3rem;
+                    }
+                }}
 }
 //---------------------------------------max-width--700px-----mobile-----------------------
 @media screen and (max-width:700px){

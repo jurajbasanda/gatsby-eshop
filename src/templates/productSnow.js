@@ -19,7 +19,7 @@ export default function Template({data}){
       <div className="item-info">
         <div className="item-title">
           <h2>{item.snow.title}</h2>
-          <small>Brand by </small>
+          <small>Brand by {item.snow.brand}</small>
           <p className='price'>£ {item.snow.price}</p>
         </div>
         <div className='item-dsc'>

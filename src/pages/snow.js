@@ -30,7 +30,7 @@ const SurfPage = ({data}) =>{
             <h4>{section.snow.title}</h4>
             </Link>
             <Link to={section.title}>
-            <img src={section.snow.image.sourceUrl} alt="img"/>
+            <img src={section.snow.image.sourceUrl} alt={section.snow.title}/>
             </Link>
             
             <p className='price'>£ {section.snow.price}</p>

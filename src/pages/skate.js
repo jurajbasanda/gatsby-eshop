@@ -30,7 +30,7 @@ const SkatePage = ({data}) =>{
             <h4>{section.Skate.title}</h4>
             </Link>
             <Link to={section.slug}>
-            <img src={section.Skate.image.sourceUrl} alt="img"/>
+            <img src={section.Skate.image.sourceUrl} alt={section.Skate.title}/>
             </Link>
             
             <p className='price'>£ {section.Skate.price}</p>

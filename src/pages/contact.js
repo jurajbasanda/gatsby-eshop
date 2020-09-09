@@ -24,11 +24,11 @@ export default function contact() {
     <h2>Contact Us</h2>
     <form action="" method="">
       <label htmlFor="email">Email</label>
-        <input type="email" name="email"/>
+        <input type="email" id='email' name="email"/>
       <label htmlFor="name">Name</label>
-        <input typ='name' name='name'/>
+        <input typ='name' id='name' name='name'/>
       <label htmlFor="message">Message</label>
-        <textarea name="message" cols="30" rows="10"></textarea>
+        <textarea name="message" id='message' cols="30" rows="10"></textarea>
     <button type="">Send</button>
     </form>
       </section>

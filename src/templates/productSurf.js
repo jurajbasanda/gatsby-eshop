@@ -15,11 +15,11 @@ export default function Template({data}){
     <section className='item-template'>
     <Link className='backLink' to='/surf'><i className="fas fa-chevron-left" /> Go back </Link>
     <div className="item-group">
-   <img src={item.surf.image.sourceUrl} alt=""/>
+   <img src={item.surf.image.sourceUrl} alt={item.surf.title}/>
       <div className="item-info">
         <div className="item-title">
           <h2>{item.surf.title}</h2>
-          <small>Brand by </small>
+          <small>Brand by {item.surf.brand}</small>
           <p className='price'>£ {item.surf.price}</p>
         </div>
         <div className='item-dsc'>
